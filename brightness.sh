@@ -1,4 +1,4 @@
-maxb="$(sudo cat /sys/class/backlight/intel_backlight/max_brightness)"
+maxb="$(sudo cat /sys/class/backlight/*/max_brightness)"
 echo "Max Brightness: $maxb"
 printf "Brightness: "
 
