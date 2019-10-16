@@ -7,5 +7,5 @@ if [ $brightness -gt $maxb ]
 then
 	echo "Too Big."
 else
-	echo $brightness | sudo tee -a /sys/class/backlight/intel_backlight/brightness > /dev/null
+	echo $brightness | sudo tee -a /sys/class/backlight/*/brightness > /dev/null
 fi
