@@ -1,5 +1,9 @@
 maxb="$(sudo cat /sys/class/backlight/*/max_brightness)"
+curb="$(sudo cat /sys/class/backlight/*/brightness)"
+
 echo "Max Brightness: $maxb"
+echo "Current Brightness: $curb"
+
 printf "Brightness: "
 
 read brightness
